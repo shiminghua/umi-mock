@@ -12,7 +12,7 @@ export default function() {
         aaaaaaaaaaaaaaaaa
       </div>
       <div>
-        aaaaaaaaaaaaaaaaa
+        bbbbbbb
       </div>
     </div>
   );
