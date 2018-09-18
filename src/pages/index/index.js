@@ -1,4 +1,4 @@
-import styles from './index.css';
+import styles from './index.less';
 
 export default function() {
   return (
@@ -8,6 +8,9 @@ export default function() {
         <li>To get started, edit <code>src/pages/index.js</code> and save to reload.</li>
         <li><a href="https://umijs.org/guide/getting-started.html">Getting Started</a></li>
       </ul>
+      <div>
+        aaaaaaaaaaaaaaaaa
+      </div>
     </div>
   );
 }
