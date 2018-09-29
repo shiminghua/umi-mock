@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'dva';
 import router from 'umi/router';
-import { Button, WhiteSpace, WingBlank } from 'antd-mobile';
+import Link from 'umi/link';
+
+import { Button, WhiteSpace, WingBlank, List } from 'antd-mobile';
 
 // import styles from './index.css';
 @connect()
@@ -29,13 +31,17 @@ class IndexPage extends Component {
 
   render() {
     return (
-      <WingBlank>
-        <Button type="primary" onClick={this.goToShopIncome}>线上购物对账-专柜收入</Button><WhiteSpace />
-        <Button type="primary" onClick={this.goToShopRefund}>线上购物对账-专柜退款</Button><WhiteSpace />
-        <Button type="primary" onClick={this.goToflashSalesDelivery}>闪购提货</Button><WhiteSpace />
-        <Button type="primary" onClick={this.goToflashSalesRefund}>闪购退货</Button><WhiteSpace />
-        <Button type="primary" onClick={this.goToTest}>test</Button><WhiteSpace />
-      </WingBlank>
+      <List>
+        <List.Item>
+          <Link to='/context'>react-context</Link>
+        </List.Item>
+        <List.Item>
+          <Link to='/404'>404</Link>
+        </List.Item>
+        {/* <List.Item>
+          <Button type="primary" onClick={this.goToTest}>test</Button>
+        </List.Item> */}
+      </List>
     );
   }
 }
